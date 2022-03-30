@@ -1,13 +1,73 @@
-body {
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Manrope;
+  background-color: hsl(218, 23%, 16%);
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.card {
+  position: relative;
+  width: 35rem;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 10px;
+  margin: 30vh auto;
+  text-align: center;
+  padding: 30px;
+}
+
+.card__header {
+  color: hsl(150, 100%, 66%);
+}
+
+.card__addvice h3 {
+  color: hsl(193, 38%, 86%);
+  font-size: 28px;
+  font-weight: 800;
+  padding: 30px;
+}
+
+.card__addvice img {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.btn button {
+  background-color: hsl(150, 100%, 66%);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -2rem;
+  left: 44.5%;
+  background-image: url('./assets/images/icon-dice.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  cursor: pointer;
+}
+
+.loading {
+  color: hsl(193, 38%, 86%);
+  text-align: center;
+  margin-top: 10rem;
+}
+
+@media (max-width: 590px) {
+  .card {
+    width: 360px;
+    padding: 20px;
+  }
+  .btn button {
+    position: absolute;
+    bottom: -2rem;
+    left: 41.5%;
+  }
 }
